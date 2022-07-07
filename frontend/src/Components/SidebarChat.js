@@ -1,4 +1,5 @@
 import React from "react";
+import "./SidebarChat.css";
 import { Avatar } from "@mui/material";
 
 const SidebarChat = () => {
