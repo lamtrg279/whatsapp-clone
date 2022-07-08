@@ -25,4 +25,41 @@
 
 .chat__headerInfo > p {
   margin-top: -0.5vh;
+  color: gray;
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url(https://static-prod.adweek.com/wp-content/uploads/2022/02/Messenger-Sky-Chat-Theme-Hero-1284x680.png);
+  background-position: top;
+  background-repeat: repeat;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat__name {
+  position: absolute;
+  top: -20px;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
 }

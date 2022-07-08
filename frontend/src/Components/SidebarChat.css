@@ -11,12 +11,7 @@
 
 .sidebarChat__info > h2 {
   font-size: 16px;
-  margin-bottom: 0px;
-  margin-top: -2px;
-}
-
-.sidebarChat__info > p {
-  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .sidebarChat__info {
