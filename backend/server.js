@@ -17,11 +17,33 @@ const pusher = new Pusher({
 });
 
 //Mongoose
+
 const connection_url =
   "mongodb+srv://lam:Family12104090@cluster0.iwfnclc.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+});
+
+const db = mongoose.connection;
+db.once("open", () => {
+  console.log("DB is connected");
+  const msgCollection = db.collection("messagecontents");
+  const changeStream = msgCollection.watch();
+
+  changeStream.on("change", (change) => {
+    console.log("Change happened");
+    if (change.operationType === "insert") {
+      const messageDetails = change.fullDocument;
+
+      pusher.trigger("messages", "inserted", {
+        name: messageDetails.name,
+        message: messageDetails.message,
+      });
+    } else {
+      console.log("Error triggering Pusher");
+    }
+  });
 });
 
 //Middleware
