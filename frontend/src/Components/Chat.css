@@ -85,7 +85,7 @@
 }
 
 .chat__footer > form > button {
-  display: none;
+  border: none;
 }
 
 .chat__footer > .MuiSvgIcon-root {

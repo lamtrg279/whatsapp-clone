@@ -20,6 +20,8 @@ const Chat = ({ messages }) => {
       timestamp: new Date().toUTCString(),
       receiver: false,
     });
+
+    setInput("");
   };
 
   return (
@@ -64,7 +66,9 @@ const Chat = ({ messages }) => {
             placeholder="Aa"
           />
           <button onClick={sendMessage} type="submit">
-            <SendIcon />
+            <IconButton>
+              <SendIcon />
+            </IconButton>
           </button>
         </form>
         <MicIcon />
