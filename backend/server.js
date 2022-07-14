@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import Pusher from "pusher";
 import Messages from "./dbMessages.js";
+import cors from "cors";
 
 //Config
 const app = express();
@@ -48,6 +49,7 @@ db.once("open", () => {
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.get("/", (req, res) => {
