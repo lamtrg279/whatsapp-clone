@@ -15,5 +15,21 @@
 }
 
 .sidebarChat__info {
-  margin-left: 15px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.first {
+  float: left;
+  flex: 1;
+}
+
+.second {
+  float: right;
+  text-align: right;
+  font-size: 12px;
 }

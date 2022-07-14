@@ -37,6 +37,7 @@ const Sidebar = () => {
           src={
             "https://nofilmschool.com/sites/default/files/styles/facebook/public/tv-the_office_us-2005_2013-michael_scott-steve_carell-accessories-s01e01-worlds_best_boss_mug.jpg?itok=66DcbQaw"
           }
+          lastSeen={"11:14 AM"}
         />
         <SidebarChat
           name={"Jim"}
@@ -44,6 +45,7 @@ const Sidebar = () => {
           src={
             "https://en.meming.world/images/en/6/6d/Jim_Halpert_Smiling_Through_Blinds.jpg"
           }
+          lastSeen={"9:47 AM"}
         />
         <SidebarChat
           name={"Pamela"}
@@ -51,11 +53,13 @@ const Sidebar = () => {
           src={
             "http://honersports.weebly.com/uploads/4/1/4/1/41412103/1468043_orig.jpg"
           }
+          lastSeen={"Wed"}
         />
         <SidebarChat
           name={"Ryan"}
-          message={"Hello, you're still there?"}
+          message={"Hello, you're still ther.."}
           src={"https://cdn.mos.cms.futurecdn.net/4MwySDFfBLtYvJTk4VZkVh.jpg"}
+          lastSeen={"Jul 06"}
         />
       </div>
     </div>
