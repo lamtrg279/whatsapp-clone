@@ -25,10 +25,10 @@ const Chat = ({ messages }) => {
   return (
     <div className="chat">
       <div className="chat__header">
-        <Avatar />
+        <Avatar src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.15752-9/289987122_415067473997124_6890450480675457117_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=jpts4PLuc5YAX_7UWsK&_nc_ht=scontent-msp1-1.xx&oh=03_AVI_wvyoyqqSjuNP6oDuD1S8drvQ4kYGmLaZZqZ-wEJIpQ&oe=62D16413" />
         <div className="chat__headerInfo">
-          <h3>Room name</h3>
-          <p>Last seen at ...</p>
+          <h3>Stella</h3>
+          <p>Last seen at {new Date().toUTCString()}</p>
         </div>
         <div className="chat__headerRight">
           <IconButton>

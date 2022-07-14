@@ -27,18 +27,36 @@ const Sidebar = () => {
       <div className="sidebar__search">
         <div className="sidebar__searchContainer">
           <SearchOutlinedIcon />
-          <input
-            type="text"
-            placeholder="Search or start new chat"
-          />
+          <input type="text" placeholder="Search or start new chat" />
         </div>
       </div>
       <div className="sidebar__chats">
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
+        <SidebarChat
+          name={"Michael"}
+          message={"See you on Monday"}
+          src={
+            "https://nofilmschool.com/sites/default/files/styles/facebook/public/tv-the_office_us-2005_2013-michael_scott-steve_carell-accessories-s01e01-worlds_best_boss_mug.jpg?itok=66DcbQaw"
+          }
+        />
+        <SidebarChat
+          name={"Jim"}
+          message={"You: I got to go"}
+          src={
+            "https://en.meming.world/images/en/6/6d/Jim_Halpert_Smiling_Through_Blinds.jpg"
+          }
+        />
+        <SidebarChat
+          name={"Pamela"}
+          message={"Ha, it's pretty funny"}
+          src={
+            "http://honersports.weebly.com/uploads/4/1/4/1/41412103/1468043_orig.jpg"
+          }
+        />
+        <SidebarChat
+          name={"Ryan"}
+          message={"Hello, you're still there?"}
+          src={"https://cdn.mos.cms.futurecdn.net/4MwySDFfBLtYvJTk4VZkVh.jpg"}
+        />
       </div>
     </div>
   );
