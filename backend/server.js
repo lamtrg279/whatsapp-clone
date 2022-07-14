@@ -41,7 +41,7 @@ db.once("open", () => {
         name: messageDetails.name,
         message: messageDetails.message,
         timestamp: messageDetails.timestamp,
-        received: messageDetails.received,
+        receiver: messageDetails.receiver,
       });
     } else {
       console.log("Error triggering Pusher");
@@ -79,6 +79,4 @@ app.post("/messages", (req, res) => {
   });
 });
 
-app.listen(port, () =>
-  console.log(`Server listens on localhost:${port}`)
-);
+app.listen(port, () => console.log(`Server listens on localhost:${port}`));
